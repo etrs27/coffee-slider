@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $('.slider').cycle({
         fx: 'fade',
-        pause: 1,
+        pause: 2,
         prev: '#prev',
         next: '#next'
     });

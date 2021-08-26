@@ -22,7 +22,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-#container {
+.container {
     width: 635px;
     margin: 100px auto 0 auto;
     position: relative;
@@ -38,6 +38,11 @@ h1 {
     background-color: #eee;
 }
 
+img {
+    width: 640px;
+    height: 420px;
+}
+
 #nav-directions {
     list-style-type: none;
     z-index: 150;
@@ -45,13 +50,36 @@ h1 {
 
 #nav-directions li a {
     display: block;
-    width: 58px;
-    height: 102px;
+    width: 72px;
+    height: 62px;
     text-indent: -9999px;
     outline: none;
 }
 
-img {
-    width: 640px;
-    height: 426px;
+#prev a {
+    background: url(/images/prev-arrow.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 72px;
+    height: 62px;
+    position: absolute;
+    top: 450px;
+    left: -70px;
+}
+
+#next a {
+    background: url(/images/next-arrow.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 72px;
+    height: 62px;
+    position: absolute;
+    top: 450px;
+    right: -110px;
+}
+
+#prev a:hover, #next a:hover {
+    opacity: .5;
 }
